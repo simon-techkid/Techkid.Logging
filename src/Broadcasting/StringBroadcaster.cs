@@ -4,11 +4,9 @@ namespace Logging.Broadcasting;
 
 public class StringBroadcaster : Broadcaster<string>
 {
-    public string Type { get; set; } = "INFO";
-
     protected override string HandleMessageBasedOnMessageLogLevel(string message, LogLevel l)
     {
-        return $"[{Type}] {message}";
+        return message;
     }
 
     protected override string HandleMessageBasedOnObserverLogLevelAndMessageLogLevel(string message, LogLevel messageLevel, LogLevel observerLevel)

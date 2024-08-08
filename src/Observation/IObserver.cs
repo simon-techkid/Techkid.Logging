@@ -6,10 +6,10 @@ namespace Logging.Observation;
 
 public interface IObserver<in T>
 {
-    bool Silent { get; set; }
-    void OnCompleted();
-    void OnError(Exception error);
-    void OnNext(T value);
-    LogLevel Level { get; }
-    bool MessageMatcher(LogLevel lvl);
+    public bool Silent { get; set; }
+    public void OnCompleted();
+    public void OnError(Exception error);
+    public void OnNext(T value);
+    public LogLevel Level { get; }
+    public bool MessageMatcher(LogLevel lvl);
 }

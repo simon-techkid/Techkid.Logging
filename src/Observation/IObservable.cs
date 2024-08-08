@@ -11,10 +11,10 @@ public interface IObservable<out T>
     /// </summary>
     /// <param name="observer">An observer of type <typeparamref name="T"/> that is <see cref="Observation.IObserver{T}"/> and matches the type (<typeparamref name="T"/>) of this broadcaster.</param>
     /// <returns>An <see cref="IDisposable"/> disposer that, when called, unsubscribes the observer from this broadcaster.</returns>
-    IDisposable Subscribe(IObserver<T> observer);
+    public IDisposable Subscribe(IObserver<T> observer);
 
     /// <summary>
     /// The hash code of the broadcaster of type <typeparamref name="T"/>.
     /// </summary>
-    int HashCode { get; }
+    public int HashCode { get; }
 }
