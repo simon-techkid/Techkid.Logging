@@ -4,6 +4,10 @@ using System;
 
 namespace Logging.Observation;
 
+/// <summary>
+/// The base class for observer objects of type <typeparamref name="T"/> that observe messages of type <typeparamref name="T"/>.
+/// </summary>
+/// <typeparam name="T">The type of messages the observer can receive and interpret.</typeparam>
 public abstract class Observer<T> : IObserver<T>
 {
     /// <summary>

@@ -10,7 +10,7 @@ namespace Logging.Broadcasting;
 /// The base class for broadcaster objects of type <typeparamref name="T"/> that broadcast messages of type <typeparamref name="T"/>.
 /// </summary>
 /// <typeparam name="T">The type of messages this broadcaster can disseminate.</typeparam>
-public abstract partial class Broadcaster<T> : IBroadcaster<T>
+public abstract class Broadcaster<T> : IBroadcaster<T>
 {
     public List<Observation.IObserver<T>> Observers { get; set; }
 
@@ -140,5 +140,5 @@ public abstract partial class Broadcaster<T> : IBroadcaster<T>
         }
     }
 
-    public abstract IBroadcaster<T> Clone();
+    public abstract object Clone();
 }
