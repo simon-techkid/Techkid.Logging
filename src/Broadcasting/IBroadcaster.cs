@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Logging.Broadcasting;
 
-public interface IBroadcaster<T> : ICloneable
+public interface IBroadcaster<T>
 {
     /// <summary>
     /// The observers of this broadcaster of type <typeparamref name="T"/>.
@@ -42,4 +42,10 @@ public interface IBroadcaster<T> : ICloneable
     /// <param name="observer">An observer of type <typeparamref name="T"/> which must match the broadcaster of type <typeparamref name="T"/>.</param>
     /// <returns>An <see cref="IDisposable"/> disposer that, when called, unsubscribes the observer from this broadcaster.</returns>
     public IDisposable Subscribe(Observation.IObserver<T> observer);
+
+    /// <summary>
+    /// Clone this broadcaster of type <typeparamref name="T"/>.
+    /// </summary>
+    /// <returns>A new broadcaster.</returns>
+    public IBroadcaster<T> Clone();
 }

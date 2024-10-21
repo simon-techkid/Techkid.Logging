@@ -140,5 +140,5 @@ public abstract class Broadcaster<T> : IBroadcaster<T>
         }
     }
 
-    public abstract object Clone();
+    public abstract IBroadcaster<T> Clone();
 }
