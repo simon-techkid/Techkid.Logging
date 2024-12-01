@@ -1,10 +1,10 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Logging.Broadcasting;
+namespace Techkid.Logging.Broadcasting;
 
 /// <summary>
 /// The base class for broadcaster objects of type <typeparamref name="T"/> that broadcast messages of type <typeparamref name="T"/>.

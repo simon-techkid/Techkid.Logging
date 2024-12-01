@@ -1,8 +1,8 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
 using System;
 
-namespace Logging.Observation;
+namespace Techkid.Logging.Observation;
 
 /// <summary>
 /// The base class for observer objects of type <typeparamref name="T"/> that observe messages of type <typeparamref name="T"/>.

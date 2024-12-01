@@ -1,10 +1,10 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
 using System;
 using System.IO;
 using System.Text;
 
-namespace Logging.Observation;
+namespace Techkid.Logging.Observation;
 
 public partial class FileObserver : Observer<string>, IDisposable
 {

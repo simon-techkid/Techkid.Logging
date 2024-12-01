@@ -1,8 +1,8 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
 using System;
 
-namespace Logging.Observation;
+namespace Techkid.Logging.Observation;
 
 public partial class ConsoleObserver : Observer<string>
 {

@@ -1,6 +1,6 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
-namespace Logging.Observation;
+namespace Techkid.Logging.Observation;
 
 public interface IObserver<in T> : System.IObserver<T>
 {

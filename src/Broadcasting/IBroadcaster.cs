@@ -1,9 +1,9 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
 using System;
 using System.Collections.Generic;
 
-namespace Logging.Broadcasting;
+namespace Techkid.Logging.Broadcasting;
 
 public interface IBroadcaster<T>
 {

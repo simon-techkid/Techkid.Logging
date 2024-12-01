@@ -1,6 +1,6 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
-namespace Logging;
+namespace Techkid.Logging;
 
 /// <summary>
 /// Defines the log levels.

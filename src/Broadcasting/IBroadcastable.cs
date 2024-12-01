@@ -1,6 +1,6 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
-namespace Logging.Broadcasting;
+namespace Techkid.Logging.Broadcasting;
 
 /// <summary>
 /// A class that can broadcast messages of type <typeparamref name="T"/> to a logger.

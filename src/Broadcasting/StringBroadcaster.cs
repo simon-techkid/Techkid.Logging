@@ -1,6 +1,6 @@
-﻿// Logging by Simon Field
+﻿// Techkid.Logging by Simon Field
 
-namespace Logging.Broadcasting;
+namespace Techkid.Logging.Broadcasting;
 
 public class StringBroadcaster : Broadcaster<string>
 {
