@@ -1,3 +1,3 @@
-# Logging
+# Techkid.Logging
 
-A basic C# logging library using IObservable<T> and IObserver<T>. 
+A basic C# logging library using IObservable and IObserver.

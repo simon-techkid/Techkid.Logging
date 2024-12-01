@@ -24,7 +24,7 @@ public class StringBroadcaster : Broadcaster<string>
         Broadcast($"New subscriber to broadcaster ({HashCode}), now with {Observers.Count} observers.", LogLevel.Debug);
     }
 
-    public override StringBroadcaster Clone()
+    public override IBroadcaster<string> Clone()
     {
         StringBroadcaster clone = new()
         {
